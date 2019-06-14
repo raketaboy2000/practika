@@ -1,0 +1,90 @@
+@media(max-width:1200px) {
+  .container {
+    width: 760px;
+
+  }
+}
+
+@media(max-width:768px) {
+  .container {
+    max-width: 580px;
+    width: 95%;
+  }
+
+  .navbar__contacts {
+    display: none;
+  }
+
+  .navbar__button {
+    font-size: 12px;
+    padding: 15px 26px;
+  }
+
+  .navbar__logo {
+    width: 90px;
+  }
+}
+
+@media(min-width:1200px) {
+  .container {
+    width: 1170px;
+
+  }
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+
+  margin: auto;
+}
+
+.navbar {
+  padding: 8px 0;
+}
+
+.navbar-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__info {
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.navbar__address {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__button {
+  margin-left: 30px;
+}
+
+.navbar__phone {
+  display: inline-block;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+button {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+  padding: 18px 30px;
+}
