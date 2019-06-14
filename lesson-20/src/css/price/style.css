@@ -1,0 +1,106 @@
+.price__title {
+  margin: auto;
+  margin-bottom: 58px;
+  text-align: center;
+  font-family: "Museo Sans Cyrl 700";
+  max-width: 515px;
+  ;
+}
+
+.price__subtitle {
+  margin: auto;
+  margin-bottom: 59px;
+  text-align: center;
+}
+
+.price__card {
+  margin-bottom: 30px;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+
+}
+
+.card:hover {
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.card:hover .card__image:before {
+  opacity: 1;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.card__link {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  position: relative;
+}
+
+.card__link:hover:after {
+  height: 12px;
+
+}
+
+.card__link:after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  z-index: -1;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.card__text {
+  padding: 40px;
+
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card__image {
+  position: relative;
+
+}
+
+.card__image::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+}

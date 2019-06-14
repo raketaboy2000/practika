@@ -1,0 +1,89 @@
+.step {
+  flex-basis: 20%;
+  text-align: center;
+  position: relative;
+}
+
+.step:after {
+  content: '';
+  width: 72px;
+  height: 25px;
+  position: absolute;
+  background: url('../../img/arrow.png') no-repeat center;
+  top: -10px;
+  right: -15%;
+
+}
+
+.step:last-child:after {
+  display: none;
+}
+
+.step__image {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #ffd200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.step__text {
+  font-size: 14px;
+  max-width: 160px;
+  margin: auto;
+}
+
+.steps-block {
+  display: flex;
+
+}
+
+.steps__title {
+  margin: auto;
+  margin-bottom: 59px;
+  text-align: center;
+  font-family: "Museo Sans Cyrl 700";
+  max-width: 651px;
+}
+
+.steps__subtitle {
+  text-align: center;
+  margin-bottom: 58px;
+}
+
+@media(max-width:768px) {
+  .step {
+    margin-bottom: 30px;
+  }
+
+  .step:after {
+    display: none;
+  }
+
+  .steps-block {
+    flex-direction: column;
+  }
+}
+
+@media(max-width:1200px) {
+  .step {
+    margin-bottom: 30px;
+    flex-basis: 50%;
+  }
+
+  .step:after {
+    display: none;
+  }
+
+  .steps-block {
+    justify-content: center;
+  }
+}
